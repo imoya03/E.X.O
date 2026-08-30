@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.X.O.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">E.X.O.</div>
+        <div id="lang-switch">
+            <button data-lang="en">EN</button>
+            <button data-lang="es">ES</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1 data-i18n="hero_title">E.X.O.</h1>
+        <p data-i18n="hero_subtitle">...</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="about_title">About the project</h2>
+        <p data-i18n="about_text">...</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="how_title">How it works</h2>
+        <p data-i18n="how_text">...</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="viewer_title">Live digital twin</h2>
+
+        <div id="viewer-panel">
+            <!-- Shown only when running locally -->
+            <div id="viewer-live" style="display: none;">
+                <div id="status" class="disconnected" data-i18n="status_disconnected">Disconnected</div>
+                <div class="readout">
+                    <div>
+                        <span data-i18n="gesture_label">Detected gesture</span>
+                        <div class="value" id="val-gesture">-</div>
+                    </div>
+                    <div>
+                        <span data-i18n="confidence_label">Confidence</span>
+                        <div class="value" id="val-confidence">-</div>
+                    </div>
+                    <div>
+                        <span data-i18n="elbow_label">Elbow</span>
+                        <div class="value" id="val-elbow">-</div>
+                    </div>
+                    <div>
+                        <span data-i18n="gripper_label">Gripper</span>
+                        <div class="value" id="val-gripper">-</div>
+                    </div>
+                </div>
+                <!-- TODO: Three.js canvas goes here once the 3D model is ready -->
+            </div>
+
+            <!-- Shown only when NOT running locally (e.g. GitHub Pages) -->
+            <div id="viewer-unavailable">
+                <h3 data-i18n="viewer_local_only_title">Live view unavailable</h3>
+                <p data-i18n="viewer_local_only_text">...</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p data-i18n="contact_text">...</p>
+    </section>
+
+    <footer>E.X.O. — Myoelectric Hand/Arm Project</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

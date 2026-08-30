@@ -1,0 +1,20 @@
+{
+  "nav_home": "Inicio",
+  "hero_title": "E.X.O.",
+  "hero_subtitle": "Un proyecto de brazo/mano protésica mioeléctrica — procesamiento de señal EMG, clasificación de gestos con IA, y control en tiempo real.",
+  "about_title": "Sobre el proyecto",
+  "about_text": "E.X.O. es un brazo protésico mioeléctrico que lee la actividad muscular (EMG) mediante un sensor AD8226, clasifica el gesto deseado usando un modelo de IA entrenado localmente, y controla un brazo con servomotores en tiempo real. Este sitio documenta el proyecto y, al correr localmente, te permite ver el brazo moverse en vivo mediante su gemelo digital.",
+  "how_title": "Cómo funciona",
+  "how_text": "Un Arduino Uno muestrea la señal EMG a 1000Hz y la envía a un backend en Python, que filtra la señal, extrae características, y clasifica el gesto. El resultado controla un segundo Arduino/ESP32 con los servomotores, y se transmite en tiempo real a esta interfaz web.",
+  "viewer_title": "Gemelo digital en vivo",
+  "viewer_local_only_title": "Vista en vivo no disponible",
+  "viewer_local_only_text": "Esta sección se conecta a la API local de Python y solo funciona cuando este sitio corre desde tu propia máquina. Ejecuta el proyecto localmente para ver el brazo moverse en tiempo real aquí.",
+  "status_connected": "Conectado",
+  "status_disconnected": "Desconectado",
+  "gesture_label": "Gesto detectado",
+  "confidence_label": "Confianza",
+  "elbow_label": "Codo",
+  "gripper_label": "Pinza",
+  "contact_title": "Contacto",
+  "contact_text": "Desarrollado por Nacho — estudiante de Ingeniería en Mecatrónica. Preguntas o comentarios son bienvenidos."
+}

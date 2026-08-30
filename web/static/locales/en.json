@@ -1,0 +1,20 @@
+{
+  "nav_home": "Home",
+  "hero_title": "E.X.O.",
+  "hero_subtitle": "A myoelectric prosthetic hand/arm project — EMG signal processing, AI-driven gesture classification, and real-time control.",
+  "about_title": "About the project",
+  "about_text": "E.X.O. is a myoelectric prosthetic arm that reads muscle activity (EMG) through an AD8226 sensor, classifies the intended gesture using a locally-trained AI model, and drives a servo-actuated arm in real time. This site documents the project and, when running locally, lets you watch the arm move live through its digital twin.",
+  "how_title": "How it works",
+  "how_text": "An Arduino Uno samples the EMG signal at 1000Hz and streams it to a Python backend, which filters the signal, extracts features, and classifies the gesture. The result drives a second Arduino/ESP32 controlling the servos, and is broadcast in real time to this web interface.",
+  "viewer_title": "Live digital twin",
+  "viewer_local_only_title": "Live view unavailable",
+  "viewer_local_only_text": "This section connects to the local Python API and only works when this site is served from your own machine. Run the project locally to see the arm move in real time here.",
+  "status_connected": "Connected",
+  "status_disconnected": "Disconnected",
+  "gesture_label": "Detected gesture",
+  "confidence_label": "Confidence",
+  "elbow_label": "Elbow",
+  "gripper_label": "Gripper",
+  "contact_title": "Contact",
+  "contact_text": "Built by Nacho — Mechatronics Engineering student. Questions or feedback are welcome."
+}
