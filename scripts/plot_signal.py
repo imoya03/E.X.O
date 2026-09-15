@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use("TkAgg")
+
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -17,7 +20,6 @@ reader.connect()
 
 fig, ax = plt.subplots()
 line, = ax.plot(data_buffer)
-ax.set_ylim(0, 1023)
 ax.set_title("Raw EMG Signal (AD8226)")
 ax.set_xlabel("Samples")
 ax.set_ylabel("ADC value (0-1023)")
@@ -29,10 +31,12 @@ def update(frame):
         if value is not None:
             data_buffer.append(value)
     line.set_ydata(data_buffer)
+    ax.relim()
+    ax.autoscale_view()
     return line,
 
 
-ani = animation.FuncAnimation(fig, update, interval=30, blit=True)
+ani = animation.FuncAnimation(fig, update, interval=30, blit=False, cache_frame_data=False)
 
 try:
     plt.show()

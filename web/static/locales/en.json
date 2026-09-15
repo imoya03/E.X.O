@@ -1,20 +1,70 @@
 {
-  "nav_home": "Home",
-  "hero_title": "E.X.O.",
-  "hero_subtitle": "A myoelectric prosthetic hand/arm project — EMG signal processing, AI-driven gesture classification, and real-time control.",
-  "about_title": "About the project",
-  "about_text": "E.X.O. is a myoelectric prosthetic arm that reads muscle activity (EMG) through an AD8226 sensor, classifies the intended gesture using a locally-trained AI model, and drives a servo-actuated arm in real time. This site documents the project and, when running locally, lets you watch the arm move live through its digital twin.",
-  "how_title": "How it works",
-  "how_text": "An Arduino Uno samples the EMG signal at 1000Hz and streams it to a Python backend, which filters the signal, extracts features, and classifies the gesture. The result drives a second Arduino/ESP32 controlling the servos, and is broadcast in real time to this web interface.",
-  "viewer_title": "Live digital twin",
-  "viewer_local_only_title": "Live view unavailable",
-  "viewer_local_only_text": "This section connects to the local Python API and only works when this site is served from your own machine. Run the project locally to see the arm move in real time here.",
-  "status_connected": "Connected",
-  "status_disconnected": "Disconnected",
-  "gesture_label": "Detected gesture",
-  "confidence_label": "Confidence",
-  "elbow_label": "Elbow",
-  "gripper_label": "Gripper",
-  "contact_title": "Contact",
-  "contact_text": "Built by Nacho — Mechatronics Engineering student. Questions or feedback are welcome."
+  "page": {
+    "title": "E.X.O - EMG to Orthosis"
+  },
+  "nav": {
+    "menu": "Menu",
+    "home": "Home",
+    "landing": "Landing",
+    "generic": "Generic",
+    "elements": "Elements",
+    "getStarted": "Get Started",
+    "login": "Log In"
+  },
+  "banner": {
+    "title": "Hi, my name is E.X.O",
+    "description": "I am a prosthesis in development in order to",
+    "license": "Helping people with reduced mobility.",
+    "getStarted": "Get Started"
+  },
+  "tiles": {
+    "aliquam": {
+      "title": "Aliquam",
+      "description": "Ipsum dolor sit amet"
+    },
+    "tempus": {
+      "title": "Tempus",
+      "description": "Feugiat amet tempus"
+    },
+    "magna": {
+      "title": "Magna",
+      "description": "Lorem etiam nullam"
+    },
+    "ipsum": {
+      "title": "Ipsum",
+      "description": "Nisl sed aliquam"
+    },
+    "consequat": {
+      "title": "Consequat",
+      "description": "Ipsum dolor sit amet"
+    },
+    "etiam": {
+      "title": "Etiam",
+      "description": "Feugiat amet tempus"
+    }
+  },
+  "sectionTwo": {
+    "title": "Featured content",
+    "description": "This is sample text to demonstrate how internationalization works. You can replace it with your website's actual information while keeping the same template structure.",
+    "getStarted": "Get Started"
+  },
+  "location": {
+    "title": "Location",
+    "description": "Visit us at the university."
+  },
+  "contact": {
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message",
+    "sendMessage": "Send Message",
+    "clear": "Clear",
+    "phone": "Phone",
+    "address": "Address",
+    "addressLine1": "From the Francisco J. Orlich Bridge 100 meters West, 350 meters south.",
+    "addressLine2": "Belén, Heredia 40703",
+    "addressLine3": "Costa Rica"
+  }
 }
