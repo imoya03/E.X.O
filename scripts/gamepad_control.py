@@ -14,7 +14,7 @@ Controls:
   Square      -> macro: Wave
   L1          -> macro: Full open
   Down        -> macro: Wave in place
-  Options     -> quit
+  Options     -> quitA
 """
 
 import sys
